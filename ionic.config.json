@@ -1,0 +1,7 @@
+{
+  "name": "PotSpot",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
