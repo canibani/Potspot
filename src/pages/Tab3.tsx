@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
 import {
-    IonButton,
+    IonButton, IonCheckbox,
     IonContent,
-    IonHeader,
+    IonHeader, IonIcon,
     IonInput,
     IonItem,
-    IonItemDivider, IonLabel,
+    IonItemDivider, IonItemOption, IonItemOptions, IonItemSliding, IonLabel,
     IonList,
-    IonPage, IonText, IonTextarea,
-    IonTitle,
+    IonPage, IonRadio, IonText, IonTextarea,
+    IonTitle, IonToggle,
     IonToolbar
 } from '@ionic/react';
 import './Tab3.css';
+import {star, starHalf} from "ionicons/icons";
 
 const Tab3: React.FC = () => {
 
@@ -19,11 +20,27 @@ const Tab3: React.FC = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle>Register</IonTitle>
+                    <IonTitle>Gyms</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>
-
+            <IonContent>
+                <IonList>
+                    <IonItem>
+                        <IonLabel>Kronkel</IonLabel><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon>
+                    </IonItem>
+                    <IonItem>
+                        <IonLabel>Dreadset</IonLabel><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon>
+                    </IonItem>
+                    <IonItem>
+                        <IonLabel>Dakota</IonLabel><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon>
+                    </IonItem>
+                    <IonItem>
+                        <IonLabel>Jamaica</IonLabel><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={starHalf}></IonIcon>
+                    </IonItem>
+                    <IonItem>
+                        <IonLabel>Lucky Luck</IonLabel><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon><IonIcon icon={star}></IonIcon>
+                    </IonItem>
+                </IonList>
             </IonContent>
         </IonPage>
     );

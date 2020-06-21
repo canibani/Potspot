@@ -34,6 +34,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Register from "./pages/Register";
+import Spot from "./pages/Spot";
 
 const App: React.FC = () => (
   <IonApp>
@@ -44,6 +45,7 @@ const App: React.FC = () => (
           <Route path="/tab2" component={Tab2} exact={true} />
           <Route path="/tab3" component={Tab3} />
           <Route path="/register" component={Register} />
+          <Route path="/spot" component={Spot} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -57,7 +59,7 @@ const App: React.FC = () => (
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={square} />
-            <IonLabel>Tab3</IonLabel>
+            <IonLabel>Gyms</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
